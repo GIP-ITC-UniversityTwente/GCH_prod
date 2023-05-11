@@ -1,0 +1,40 @@
+.hide-element {
+    display: none;
+}
+
+.inline-div{
+	display: inline-block;
+}
+
+.padding15{
+	padding: 15px;
+}
+
+.bold{
+	font-weight: bold;
+}
+.ldr-padding{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.ldr-padding-more{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:none!important;animation-fill-mode:none!important}
+
+.ui.small.image {
+    object-fit: contain;
+}
+
+.leaflet-container {
+    min-height: 200px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
