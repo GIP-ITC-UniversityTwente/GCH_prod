@@ -43,10 +43,12 @@ class Nav extends React.Component {
             <div className="ui fluid container" ref="defaultNavbar">
                 <nav  className={'ui menu inverted navbar grid ' + navbarColor}>
                     <NavLink routeName="home" className="brand item" href='/'>
-                        {this.props.loading ? <img src="/assets/img/loader.gif" alt="loading..." style={{height: 30, width: 30}} /> : <img style={{height: 22, width: 22}} className="ui mini image" src="/assets/img/ld-reactor.gif" alt="ld-reactor" />}
+                        {this.props.loading ? <img src="/assets/img/loader.gif" alt="loading..." style={{height: 30, width: 30}} /> : <img style={{height: 22, width: 22}} className="ui mini image" src="/assets/img/GCH_logo.png" alt="ld-reactor" />}
                     </NavLink>
-                    <NavLink routeName="about" className="item">About {appShortTitle} </NavLink>
-                    <NavLink routeName="datasets" className="item" href="/datasets"> Datasets</NavLink>
+                    {/*<NavLink routeName="about" className="item">About {appShortTitle} </NavLink>*/}
+                    {/*<NavLink routeName="ontology" className="item">Ontology </NavLink>*/}
+                    {/*<NavLink routeName="demo" className="item">Use cases </NavLink>*/}
+                    <NavLink routeName="datasets" className="item" href="/datasets">Browser</NavLink>
                     <div className="right menu">
                         <div className="item link" onClick={this.showHelpModal}>
                             <i className="small help circle icon"></i>

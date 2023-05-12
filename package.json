@@ -1,6 +1,6 @@
 {
   "name": "gch",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "GeoCourseHub provides access to FAIR educational materials of ITC.",
   "private": true,
   "repository": {

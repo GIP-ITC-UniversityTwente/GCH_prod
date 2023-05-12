@@ -9,20 +9,22 @@ export default {
         //Note: if graphName is not specified, the identifer used for configuration will be used as graphName
         //Example config for connecting to a Stardog triple store, replace testDB with the name of your DB
         // read more at https://www.stardog.com/docs/#_stardog_resources
-        'http://localhost:5820/testDB': {
-            host: 'localhost', port: 5820, path: '/testDB', graphName: 'default', endpointType: 'stardog', useReasoning: 0
-        },
+
         //Example for connecting to a Virtuoso triple store
-        'http://dbpedia.org/sparql': {
-            host: 'dbpedia.org', port: 80, path: '/sparql', graphName: 'default', endpointType: 'virtuoso'
+        // 'http://dbpedia.org/sparql': {
+        //     host: 'dbpedia.org', port: 80, path: '/sparql', graphName: 'default', endpointType: 'virtuoso', protocol: 'https'
+        // },
+        'Competences': {
+            host: 'api.data.pldn.nl', port: 80, path: '/datasets/sronzhin/GCH/services/GCH/sparql', graphName: 'https://data.pldn.nl/sronzhin/GCH/graphs/claudia', endpointType: 'virtuoso', protocol: 'https'
         },
-        //Example for connecting to a ClioPatria triple store
-        'http://localhost:3020/sparql/': {
-            host: 'localhost', port: 3020, path: '/sparql/', endpointType: 'ClioPatria'
+        'Courses and Learning Units': {
+            host: 'api.data.pldn.nl', port: 80, path: '/datasets/sronzhin/GCH/services/GCH/sparql', graphName: 'https://data.pldn.nl/sronzhin/GCH/graphs/claudia', endpointType: 'virtuoso', protocol: 'https'
         },
-        //Example for connecting to a GraphDB triple store
-        'http://localhost:7200/repositories/test': {
-            host: 'localhost', port: 7200, path: '/repositories/test', endpointType: 'graphdb'
+        'Learning Activities': {
+            host: 'api.data.pldn.nl', port: 80, path: '/datasets/sronzhin/GCH/services/GCH/sparql', graphName: 'https://data.pldn.nl/sronzhin/GCH/graphs/claudia', endpointType: 'virtuoso', protocol: 'https'
+        },
+        'mgeo': {
+            host: 'api.data.pldn.nl', port: 80, path: '/datasets/sronzhin/GCH/services/GCH/sparql', graphName: 'https://data.pldn.nl/sronzhin/GCH/graphs/mgeo', endpointType: 'virtuoso', protocol: 'https'
         }
     },
     dbpediaLookupService: [

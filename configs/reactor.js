@@ -38,12 +38,49 @@ export default {
                 resourceLabelProperty: ['http://www.w3.org/2000/01/rdf-schema#label']
             },
             //example reactor config
-            'http://dbpedia.org/sparql': {
+            // 'http://dbpedia.org/sparql': {
+            //     readOnly: 1,
+            //     allowInlineConfig: 0,
+            //     resourceFocusType: ['http://dbpedia.org/ontology/University'],
+            //     resourceLabelProperty: ['http://xmlns.com/foaf/0.1/name'],
+            //     datasetLabel: ['DBpedia Universities']
+            // },
+            'Competences': {
                 readOnly: 1,
-                allowInlineConfig: 0,
-                resourceFocusType: ['http://dbpedia.org/ontology/University'],
-                resourceLabelProperty: ['http://xmlns.com/foaf/0.1/name'],
-                datasetLabel: ['DBpedia Universities']
+                allowInlineConfig: 1,
+                resourceFocusType: ['http://gch.utwente.nl/ontology#Competence'],
+                resourceLabelProperty: ['http://www.w3.org/2000/01/rdf-schema#label'],
+                datasetLabel: ['Geo Course Hub: Competences']
+            },
+            'Courses and Learning Units': {
+                readOnly: 1,
+                allowInlineConfig: 1,
+                resourceFocusType: ['http://gch.utwente.nl/ontology#Course', "http://gch.utwente.nl/ontology#LearningUnit"],
+                resourceLabelProperty: ['http://www.w3.org/2000/01/rdf-schema#label'],
+                datasetLabel: ['Geo Course Hub: Courses and Learning Units']
+            },
+            'Learning Activities': {
+                readOnly: 1,
+                allowInlineConfig: 1,
+                resourceFocusType: [
+                    'http://gch.utwente.nl/ontology#Lecture',
+                    'http://gch.utwente.nl/ontology#SupervisedPractical',
+                    'http://gch.utwente.nl/ontology#FeedbackSession',
+                    'http://gch.utwente.nl/ontology#Tutorial',
+                    'http://gch.utwente.nl/ontology#UnsupervisedPractical',
+                    'http://gch.utwente.nl/ontology#QAndASession'
+                ],
+                resourceLabelProperty: ['http://www.w3.org/2000/01/rdf-schema#label'],
+                datasetLabel: ['Geo Course Hub: Learning Activities']
+            },
+            'mgeo':{
+                readOnly: 1,
+                allowInlineConfig: 1,
+                resourceFocusType:[
+                    'http://gch.utwente.nl/ontology#Course'
+                ],
+                resourceLabelProperty: ['http://www.w3.org/2000/01/rdf-schema#label'],
+                datasetLabel: ['Geo Course Hub: M-GEO Courses']
             }
         },
         resource: {

@@ -54,9 +54,9 @@ class Datasets extends React.Component {
         let annotateDatasetDIV = '';
         let datasetActionsDIV = '';
         let queryImportDIV = '';
-        let info = <div className="ui blue message">
-                        The list contains only the datasets for which at least one <b>config scope</b> is found!
-        </div>;
+        // let info = <div className="ui blue message">
+        //                 The list contains only the datasets for which at least one <b>config scope</b> is found!
+        // </div>;
         let dss = this.props.DatasetsStore.datasetsList;
         if(enableAuthentication && !user){
             output = <div className="ui warning message"><div className="header"> Please <a href="/register">Register</a> or <a href="/login">Login</a> to see the datasets.</div></div>;
@@ -167,7 +167,7 @@ class Datasets extends React.Component {
             <div className="ui fluid container ldr-padding-more" ref="datasets">
                 <div className="ui grid">
                     <div className="ui column">
-                        {dss.length ? <div>{info}</div> : null}
+                        {/*{dss.length ? <div>{info}</div> : null}*/}
                         <div className="ui segment">
                             <h2><span className="ui big black circular label">{dss.length}</span> Datasets</h2>
                             {this.props.DatasetsStore.datasetsList.length > 7 ?
