@@ -55,7 +55,7 @@ export default {
             'Courses and Learning Units': {
                 readOnly: 1,
                 allowInlineConfig: 1,
-                resourceFocusType: ['http://gch.utwente.nl/ontology#Course', "http://gch.utwente.nl/ontology#LearningUnit"],
+                resourceFocusType: ['http://gch.utwente.nl/ontology#Course', 'http://gch.utwente.nl/ontology#LearningUnit'],
                 resourceLabelProperty: ['http://www.w3.org/2000/01/rdf-schema#label'],
                 datasetLabel: ['Geo Course Hub: Courses and Learning Units']
             },

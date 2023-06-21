@@ -15,16 +15,16 @@ export default {
         //     host: 'dbpedia.org', port: 80, path: '/sparql', graphName: 'default', endpointType: 'virtuoso', protocol: 'https'
         // },
         'Competences': {
-            host: 'api.data.pldn.nl', port: 80, path: '/datasets/sronzhin/GCH/services/GCH/sparql', graphName: 'https://data.pldn.nl/sronzhin/GCH/graphs/claudia', endpointType: 'virtuoso', protocol: 'https'
+            host: 'api.data.pldn.nl', port: 80, path: '/datasets/GeoCourseHub/GCH/services/GCH/sparql', graphName: 'https://data.pldn.nl/sronzhin/GCH/graphs/claudia', endpointType: 'virtuoso', protocol: 'https'
         },
         'Courses and Learning Units': {
-            host: 'api.data.pldn.nl', port: 80, path: '/datasets/sronzhin/GCH/services/GCH/sparql', graphName: 'https://data.pldn.nl/sronzhin/GCH/graphs/claudia', endpointType: 'virtuoso', protocol: 'https'
+            host: 'api.data.pldn.nl', port: 80, path: '/datasets/GeoCourseHub/GCH/services/GCH/sparql', graphName: 'https://data.pldn.nl/sronzhin/GCH/graphs/claudia', endpointType: 'virtuoso', protocol: 'https'
         },
         'Learning Activities': {
-            host: 'api.data.pldn.nl', port: 80, path: '/datasets/sronzhin/GCH/services/GCH/sparql', graphName: 'https://data.pldn.nl/sronzhin/GCH/graphs/claudia', endpointType: 'virtuoso', protocol: 'https'
+            host: 'api.data.pldn.nl', port: 80, path: '/datasets/GeoCourseHub/GCH/services/GCH/sparql', graphName: 'https://data.pldn.nl/sronzhin/GCH/graphs/claudia', endpointType: 'virtuoso', protocol: 'https'
         },
         'mgeo': {
-            host: 'api.data.pldn.nl', port: 80, path: '/datasets/sronzhin/GCH/services/GCH/sparql', graphName: 'https://data.pldn.nl/sronzhin/GCH/graphs/mgeo', endpointType: 'virtuoso', protocol: 'https'
+            host: 'api.data.pldn.nl', port: 80, path: '/datasets/GeoCourseHub/GCH/services/GCH/sparql', graphName: 'https://data.pldn.nl/sronzhin/GCH/graphs/mgeo', endpointType: 'virtuoso', protocol: 'https'
         }
     },
     dbpediaLookupService: [
